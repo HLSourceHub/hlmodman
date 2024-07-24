@@ -24,10 +24,10 @@
   <object class="tk.Toplevel" id="toplevel1">
     <property name="height">200</property>
     <property name="iconphoto">icon.png</property>
-    <property name="maxsize">200|200</property>
-    <property name="minsize">200|200</property>
+    <property name="maxsize">800|200</property>
+    <property name="minsize">800|200</property>
     <property name="title" translatable="yes">mgen</property>
-    <property name="width">200</property>
+    <property name="width">800</property>
     <child>
       <object class="ttk.Label" id="namelabel" named="True">
         <property name="font">TkDefaultFont</property>
@@ -35,7 +35,7 @@
         <property name="text" translatable="yes">name</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.06</property>
+          <property name="relx">0.16</property>
           <property name="rely">0.19</property>
           <property name="x">0</property>
           <property name="y">0</property>
@@ -47,8 +47,9 @@
         <property name="text" translatable="yes">      Example Mod</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.25</property>
+          <property name="relx">0.22</property>
           <property name="rely">0.19</property>
+          <property name="width">480</property>
           <property name="x">0</property>
           <property name="y">0</property>
         </layout>
@@ -59,7 +60,7 @@
         <property name="text" translatable="yes">type</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.08</property>
+          <property name="relx">0.16</property>
           <property name="rely">0.30</property>
           <property name="x">0</property>
           <property name="y">0</property>
@@ -70,8 +71,9 @@
       <object class="ttk.Combobox" id="typebox" named="True">
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.25</property>
+          <property name="relx">0.22</property>
           <property name="rely">0.30</property>
+          <property name="width">480</property>
           <property name="x">0</property>
           <property name="y">0</property>
         </layout>
@@ -84,7 +86,7 @@
         <property name="text" translatable="yes">dir</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.10</property>
+          <property name="relx">0.16</property>
           <property name="rely">0.41</property>
           <property name="x">0</property>
           <property name="y">0</property>
@@ -93,10 +95,13 @@
     </child>
     <child>
       <object class="ttk.Entry" id="direntry" named="True">
+        <property name="text" translatable="yes">      C:\Program Files (x86)\Steam\steamapps\common\Half-Life
+</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.25</property>
+          <property name="relx">0.22</property>
           <property name="rely">0.41</property>
+          <property name="width">480</property>
           <property name="x">0</property>
           <property name="y">0</property>
         </layout>
@@ -104,12 +109,11 @@
     </child>
     <child>
       <object class="ttk.Button" id="dirbutton" named="True">
-        <property name="text" translatable="yes">button1</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relheight">0.06</property>
-          <property name="relwidth">0.06</property>
-          <property name="relx">0.88</property>
+          <property name="relheight">0.07</property>
+          <property name="relwidth">0.02</property>
+          <property name="relx">0.83</property>
           <property name="rely">0.426</property>
           <property name="x">0</property>
           <property name="y">0</property>
@@ -122,7 +126,7 @@
         <property name="text" translatable="yes">ver</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.10</property>
+          <property name="relx">0.16</property>
           <property name="rely">0.52</property>
           <property name="x">0</property>
           <property name="y">0</property>
@@ -133,8 +137,9 @@
       <object class="ttk.Entry" id="verentry" named="True">
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.25</property>
+          <property name="relx">0.22</property>
           <property name="rely">0.52</property>
+          <property name="width">480</property>
           <property name="x">0</property>
           <property name="y">0</property>
         </layout>
@@ -142,9 +147,13 @@
     </child>
     <child>
       <object class="ttk.Label" id="xjiro" named="True">
+        <property name="relief">flat</property>
         <property name="text" translatable="yes">xji.ro</property>
-        <layout manager="pack">
-          <property name="side">top</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relx">0.468</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
         </layout>
       </object>
     </child>
@@ -153,22 +162,23 @@
         <property name="text" translatable="yes">Generate Manifest</property>
         <layout manager="place">
           <property name="anchor">nw</property>
-          <property name="relx">0.28</property>
+          <property name="relx">0.253</property>
           <property name="rely">0.65</property>
+          <property name="width">380</property>
           <property name="x">0</property>
           <property name="y">0</property>
         </layout>
       </object>
     </child>
     <child>
-      <object class="ttk.Progressbar" id="progressbar1">
+      <object class="ttk.Progressbar" id="progressbar" named="True">
         <property name="orient">horizontal</property>
         <layout manager="place">
           <property name="anchor">nw</property>
           <property name="height">20</property>
-          <property name="relx">0.2</property>
+          <property name="relx">0.1</property>
           <property name="rely">0.85</property>
-          <property name="width">140</property>
+          <property name="width">670</property>
         </layout>
       </object>
     </child>
